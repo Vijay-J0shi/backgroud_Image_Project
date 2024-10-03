@@ -1,5 +1,5 @@
-My Kaggle notebook =   https://www.kaggle.com/code/vijayj0shi/avataar-projeccth1
-      (It I contains each versions I have saved to verify I own the work)
+**My Kaggle notebook =   https://www.kaggle.com/code/vijayj0shi/avataar-projeccth1
+      (It I contains each versions I have saved to verify I own the work" alt="image" width="500" height="300"/>**
 
 <h1>Stable Diffusion Inpainting with Depth Maps for Video Generation</h1>
 
@@ -19,70 +19,66 @@ This project focuses on image inpainting using the Stable Diffusion model, incor
 
 ## Step-by-Step Explanation
 ***1. Load the Stable Diffusion Inpainting Pipeline***
-The Stable Diffusion Inpainting model is loaded from stabilityai/stable-diffusion-2-inpainting. The model is configured to run on the GPU (using CUDA) for faster computation.
-
-![image](https://github.com/user-attachments/assets/edcc2f4b-3764-4efc-a953-0a98968121cd)
-
+The Stable Diffusion Inpainting model is loaded from stabilityai/stable-diffusion-2-inpainting. The model is configured to run on the GPU (using CUDA" alt="image" width="500" height="300"/> for faster computation.
+<br><br>
+<img src="https://github.com/user-attachments/assets/edcc2f4b-3764-4efc-a953-0a98968121cd" alt="image" width="500" height="300"/>
+<br><br>
 
 ## 2. Download and Process Input Image
 This section defines a function to download the initial image from a URL and convert it into an RGB format using PIL.
-
-![image](https://github.com/user-attachments/assets/cc87606a-8239-4016-ab46-d96c37372f17)
-
-![image](https://github.com/user-attachments/assets/e3854bb8-ec85-43da-9a9a-72a2f2434797)
-
+<br><br>
+<img src="https://github.com/user-attachments/assets/cc87606a-8239-4016-ab46-d96c37372f17" alt="image" width="500" height="300"/>
+<br><br>
+<img src="https://github.com/user-attachments/assets/e3854bb8-ec85-43da-9a9a-72a2f2434797" alt="image" width="500" height="300"/>
+<br><br>
 ## 3. Create Object Mask for the Image
 The object mask is created to ensure that the part of the image you want to keep unchanged is preserved. The mask identifies the object of interest by isolating it from a white background.
 
-
-![image](https://github.com/user-attachments/assets/e99a2cc0-8671-44a4-988e-7fff55869988)
-
-![image](https://github.com/user-attachments/assets/64c1a40f-cca6-4a7c-b06c-b796ba4a2337)
-
+<br><br>
+<img src="https://github.com/user-attachments/assets/e99a2cc0-8671-44a4-988e-7fff55869988" alt="image" width="500" height="300"/>
+<br><br>
+<img src="https://github.com/user-attachments/assets/64c1a40f-cca6-4a7c-b06c-b796ba4a2337" alt="image" width="500" height="300"/>
+<br><br>
 
 ## 4. Generate Depth Map Using Pretrained Model
-A depth map is generated using a pretrained depth estimation model (Intel/dpt-large). This helps create a more realistic background based on the perspective and spatial features of the image.
-
-![image](https://github.com/user-attachments/assets/59997235-7899-41d3-a623-fa7601984162)
-
-![image](https://github.com/user-attachments/assets/a0baa8da-2211-4e4e-960b-89aa4ff7456b)
-
+A depth map is generated using a pretrained depth estimation model (Intel/dpt-large" alt="image" width="500" height="300"/>. This helps create a more realistic background based on the perspective and spatial features of the image.
+<br><br>
+<img src="https://github.com/user-attachments/assets/59997235-7899-41d3-a623-fa7601984162" alt="image" width="500" height="300"/>
+<br><br>
+<img src="https://github.com/user-attachments/assets/a0baa8da-2211-4e4e-960b-89aa4ff7456b" alt="image" width="500" height="300"/>
+<br><br>
 ## 5. Apply Image Inpainting Using Depth Map
 Here, image inpainting is applied using a prompt that defines the modifications to the scene, along with the generated object mask and depth map. Various hyperparameters like num_inference_steps and guidance_scale control the generation process for creative freedom.
-
-![image](https://github.com/user-attachments/assets/68de1bc4-c6bf-491e-be3c-e5a66316e06e)
-
-![image](https://github.com/user-attachments/assets/98602a3d-ffe5-4aab-be19-13e625d1ee21)
-
+<br>
+<img src="https://github.com/user-attachments/assets/68de1bc4-c6bf-491e-be3c-e5a66316e06e" alt="image" width="500" height="300"/>
+<br><br>
+<img src="https://github.com/user-attachments/assets/98602a3d-ffe5-4aab-be19-13e625d1ee21" alt="image" width="500" height="300"/>
+<br><br>
 ## 6. Generate Video Frames Based on Text Prompts
 Video frames are generated for each prompt, creating a sequence of frames where the object remains unaltered while the scene evolves according to each prompt. The prompts are designed to create diverse scenes, and the depth map ensures realistic lighting and perspective adjustments.
+<br><br>
+<img src="https://github.com/user-attachments/assets/af7cabba-7a1a-48fe-a84f-2871eb77c44c" alt="image" width="500" height="300"/>
+<br><br>
 
-python
-Copy code
-def frame_creation(init_image, prompts, negative_prompt, scale_factor=0.77):
-    # Code to generate frames...
-    return frames
-Here, you can upload a gallery of generated frames, showing how the image changes with each prompt.
-
-7. Save and Export Frames into a Video File
-The frames are saved as a video file using OpenCV. You can adjust the frame rate (fps) and target size to achieve the desired output quality.
-
-![image](https://github.com/user-attachments/assets/af7cabba-7a1a-48fe-a84f-2871eb77c44c)
-![image](https://github.com/user-attachments/assets/b7885d27-0e86-4a00-9fe8-6fef9e4db54e)
-
-![image](https://github.com/user-attachments/assets/34e0f68a-128e-4dc4-aec5-3f36ac91e9ef)
-
+# 7. Save and Export Frames into a Video File
+The frames are saved as a video file using OpenCV. You can adjust the frame rate (fps" alt="image" width="500" height="300"/> and target size to achieve the desired output quality.
+<br><br>
+<img src="https://github.com/user-attachments/assets/b7885d27-0e86-4a00-9fe8-6fef9e4db54e" alt="image" width="500" height="300"/>
+<br><br>
+<img src="https://github.com/user-attachments/assets/34e0f68a-128e-4dc4-aec5-3f36ac91e9ef" alt="image" width="500" height="300"/>
+<br><br>
 # How to Run the Project
 **Install Dependencies**
 **Ensure you have the following Python libraries installed:**
-![image](https://github.com/user-attachments/assets/76fbe074-b047-49d6-b513-38efc0f06a2f)
-
+<br><br>
+<img src="https://github.com/user-attachments/assets/76fbe074-b047-49d6-b513-38efc0f06a2f" alt="image" />
+<br><br>
 **pip install diffusers transformers accelerate torch PIL numpy requests opencv-python matplotlib**
 **Run the Code You can run the provided code either in a local environment or using a cloud platform like Google Colab or Kaggle. Make sure to have GPU access enabled.**
 
 # Output
 
-***The final output is a video showcasing the transitions between various prompts, with the object (e.g., a chair, electric cooker) remaining unchanged.***
+***The final output is a video showcasing the transitions between various prompts, with the object (e.g., a chair, electric cooker" alt="image" width="500" height="300"/> remaining unchanged.***
 ***Customizing the Project***
 ***Change the Input Image***
 ***Replace the URL or path to the input image to work with different objects.***
