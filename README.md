@@ -1,5 +1,5 @@
 **My Kaggle notebook =   https://www.kaggle.com/code/vijayj0shi/avataar-projeccth1
-      (It I contains each versions I have saved to verify I own the work" alt="image" width="500" height="300"/>**
+      (It I contains each versions I have saved to verify I own the work"
 
 <h1>Stable Diffusion Inpainting with Depth Maps for Video Generation</h1>
 
