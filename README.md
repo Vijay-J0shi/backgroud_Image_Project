@@ -242,7 +242,10 @@ depth_map
 
 <img src="https://github.com/user-attachments/assets/07afe5d3-0706-415b-9c5f-0241316a4f32" alt="image" width="500" height="300"/>
 <br><br>
-## 5. Apply Image Inpainting Using Depth Map and Item Mask
+
+## 5. Apply Image Inpainting Using Depth Map and  Masked Image
+
+<br>
 Here, image inpainting is applied using a prompt that defines the modifications to the scene, along with the generated object mask and depth map. Various hyperparameters like num_inference_steps and guidance_scale control the generation process for creative freedom.
 <br><br>
 
