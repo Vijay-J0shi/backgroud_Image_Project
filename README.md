@@ -22,7 +22,8 @@ This project focuses on image inpainting using the Stable Diffusion model, incor
 The Stable Diffusion Inpainting model is loaded from stabilityai/stable-diffusion-2-inpainting. The model is configured to run on the GPU .
 <br><br>
 
-<img src="https://github.com/user-attachments/assets/3dda4553-876d-4759-b820-4fa3c14d8300" alt="image" width="500" height="300"/>
+
+<img src="https://github.com/user-attachments/assets/1548b2a1-1be7-489c-8be7-64651498b8bf" alt="image"  height="300"/>
 <br><br>
 
 ## 2. Download and Process Input Image
