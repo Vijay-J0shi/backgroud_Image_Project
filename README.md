@@ -1,8 +1,8 @@
-**My Kaggle notebook =   https://www.kaggle.com/code/vijayj0shi/avataar-projeccth1
-      (It I contains each versions I have saved to verify I own the work)**
+**My Kaggle notebook
 
-<h1>Stable Diffusion Inpainting with Depth Maps for Video Generation</h1>
+Check out my project on Kaggle: [Avataar Project](https://www.kaggle.com/code/vijayj0shi/avataar-projeccth1/edit/run/199673023)
 
+      (It I contains each versions I have saved for refrence)**
 # Stable Diffusion Inpainting with Depth Maps for Video Generation
 
 ## Overview
@@ -21,7 +21,8 @@ This project focuses on image inpainting using the Stable Diffusion model, incor
 ***1. Load the Stable Diffusion Inpainting Pipeline***
 The Stable Diffusion Inpainting model is loaded from stabilityai/stable-diffusion-2-inpainting. The model is configured to run on the GPU (using CUDA" alt="image" width="500" height="300"/> for faster computation.
 <br><br>
-<img src="https://github.com/user-attachments/assets/edcc2f4b-3764-4efc-a953-0a98968121cd" alt="image" width="500" height="300"/>
+
+<img src="https://github.com/user-attachments/assets/3dda4553-876d-4759-b820-4fa3c14d8300" alt="image" width="500" height="300"/>
 <br><br>
 
 ## 2. Download and Process Input Image
@@ -29,15 +30,15 @@ This section defines a function to download the initial image from a URL and con
 <br><br>
 <img src="https://github.com/user-attachments/assets/cc87606a-8239-4016-ab46-d96c37372f17" alt="image" width="500" height="300"/>
 <br><br>
-<img src="https://github.com/user-attachments/assets/e3854bb8-ec85-43da-9a9a-72a2f2434797" alt="image" width="500" height="300"/>
+
+<img src="https://github.com/user-attachments/assets/2165596f-eae8-45a1-886d-e9249528c8ce" alt="image" width="500" height="300"/>
 <br><br>
 ## 3. Create Object Mask for the Image
 The object mask is created to ensure that the part of the image you want to keep unchanged is preserved. The mask identifies the object of interest by isolating it from a white background.
 
 <br><br>
-<img src="https://github.com/user-attachments/assets/e99a2cc0-8671-44a4-988e-7fff55869988" alt="image" width="500" height="300"/>
-<br><br>
-<img src="https://github.com/user-attachments/assets/64c1a40f-cca6-4a7c-b06c-b796ba4a2337" alt="image" width="500" height="300"/>
+
+<img src="https://github.com/user-attachments/assets/51ec0fb0-4ab6-4adc-a231-a1f92d7ece8b" alt="image" width="500" height="300"/>
 <br><br>
 
 ## 4. Generate Depth Map Using Pretrained Model
@@ -45,17 +46,27 @@ A depth map is generated using a pretrained depth estimation model (Intel/dpt-la
 <br><br>
 <img src="https://github.com/user-attachments/assets/59997235-7899-41d3-a623-fa7601984162" alt="image" width="500" height="300"/>
 <br><br>
-<img src="https://github.com/user-attachments/assets/a0baa8da-2211-4e4e-960b-89aa4ff7456b" alt="image" width="500" height="300"/>
+<img src="https://github.com/user-attachments/assets/c84467f4-7154-41e2-876a-683d63b37909" alt="image" width="500" height="300"/>
+<br><br>
+<img src="https://github.com/user-attachments/assets/07afe5d3-0706-415b-9c5f-0241316a4f32" alt="image" width="500" height="300"/>
 <br><br>
 ## 5. Apply Image Inpainting Using Depth Map
 Here, image inpainting is applied using a prompt that defines the modifications to the scene, along with the generated object mask and depth map. Various hyperparameters like num_inference_steps and guidance_scale control the generation process for creative freedom.
-<br>
-<img src="https://github.com/user-attachments/assets/68de1bc4-c6bf-491e-be3c-e5a66316e06e" alt="image" width="500" height="300"/>
+<br><br>
+<img src="https://github.com/user-attachments/assets/5a7db679-8f27-4548-8b24-60d434678455" alt="image" width="500" height="300"/>
+<br><br>
+
+
+
 <br><br>
 <img src="https://github.com/user-attachments/assets/98602a3d-ffe5-4aab-be19-13e625d1ee21" alt="image" width="500" height="300"/>
 <br><br>
+
+
 ## 6. Generate Video Frames Based on Text Prompts
 Video frames are generated for each prompt, creating a sequence of frames where the object remains unaltered while the scene evolves according to each prompt. The prompts are designed to create diverse scenes, and the depth map ensures realistic lighting and perspective adjustments.
+<br><br>
+<img src="https://github.com/user-attachments/assets/d49ee0ae-2a0e-42a4-97f4-5266b15efbb1" alt="image" width="500" height="300"/>
 <br><br>
 <img src="https://github.com/user-attachments/assets/af7cabba-7a1a-48fe-a84f-2871eb77c44c" alt="image" width="500" height="300"/>
 <br><br>
@@ -65,6 +76,7 @@ The frames are saved as a video file using OpenCV. You can adjust the frame rate
 <br><br>
 <img src="https://github.com/user-attachments/assets/b7885d27-0e86-4a00-9fe8-6fef9e4db54e" alt="image" width="500" height="300"/>
 <br><br>
+
 <img src="https://github.com/user-attachments/assets/34e0f68a-128e-4dc4-aec5-3f36ac91e9ef" alt="image" width="500" height="300"/>
 <br><br>
 # How to Run the Project
