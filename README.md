@@ -2,7 +2,7 @@
 
 Check out my project on Kaggle: [Avataar Project](https://www.kaggle.com/code/vijayj0shi/avataar-projeccth1/edit/run/199673023)
 
-      (It I contains each versions I have saved for refrence)**
+      (It I contains each versions I have saved for refrence)
 # Stable Diffusion Inpainting with Depth Maps for Video Generation
 
 ## Overview
@@ -26,7 +26,7 @@ The Stable Diffusion Inpainting model is loaded from stabilityai/stable-diffusio
 <br><br>
 
 ## 2. Download and Process Input Image
-This section defines a function to download the initial image from a URL and convert it into an RGB format using PIL.
+(This section defines a function to download the initial image from a URL and convert it into an RGB format using PIL.)
 
 <br>
 
