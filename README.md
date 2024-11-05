@@ -1,6 +1,6 @@
 <h1> My Kaggle notebook </h1>
 
-Check out my project on Kaggle: [Avataar Project](https://www.kaggle.com/code/vijayj0shi/avataar-projeccth1/edit/run/199673023)
+Check out my project on Kaggle: [Avataar Project](https://www.kaggle.com/code/vijayj0shi/stable-diffusion-video-generation)
 
       (It I contains each versions I have saved for refrence)
 # Stable Diffusion Inpainting with Depth Maps for Video Generation
